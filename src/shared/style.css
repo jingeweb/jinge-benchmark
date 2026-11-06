@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 14px/1.4 system-ui;
+  margin: 16px;
+  background: white;
+  color: #202020;
+}
+#controls {
+  position: fixed;
+  right: 16px;
+  top: 8px;
+  z-index: 10;
+}
+button {
+  padding: 8px;
+}
+table {
+  border-collapse: collapse;
+  width: 640px;
+  table-layout: fixed;
+}
+td {
+  height: 24px;
+  border-bottom: 1px solid #ddd;
+  padding: 2px 8px;
+}
+td:first-child {
+  width: 90px;
+}
+.selected {
+  background: #d6e8ff;
+}
+#cells,
+#aliases,
+#panel {
+  display: grid;
+  grid-template-columns: repeat(10, 64px);
+  gap: 2px;
+}
+.cell,
+.alias {
+  height: 22px;
+}
+#form {
+  display: grid;
+  grid-template-columns: repeat(4, 160px);
+  gap: 4px;
+}
+input {
+  width: 160px;
+  height: 28px;
+}
+.route-row {
+  height: 22px;
+}

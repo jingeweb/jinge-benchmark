@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 14px system-ui;
+  margin: 24px;
+  color: #222;
+}
+#scroller {
+  height: 240px;
+  width: 640px;
+  overflow: auto;
+  border: 1px solid #777;
+  overscroll-behavior: contain;
+  scroll-behavior: auto;
+}
+.item {
+  height: 24px;
+  border-bottom: 1px solid #ddd;
+}
+#track {
+  margin-top: 40px;
+  width: 360px;
+  height: 60px;
+  background: #eef1f5;
+  touch-action: none;
+  user-select: none;
+}
+#thumb {
+  width: 60px;
+  height: 60px;
+  background: #1677ff;
+  touch-action: none;
+}
+output {
+  display: block;
+  height: 24px;
+}

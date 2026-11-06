@@ -1,0 +1,152 @@
+import type { Fixture, Command } from './model';
+export type Case = { id: string; group: string; label: string; fixture: Fixture; command: Command };
+export const cases: Case[] = [
+  ...[1000, 10000].map((count) => ({
+    id: `list-create-${count}`,
+    group: '列表',
+    label: `创建 ${count} 行`,
+    fixture: { scene: 'table', count: 0 } as Fixture,
+    command: { type: 'rows', count } as Command,
+  })),
+  {
+    id: 'list-replace-1000',
+    group: '列表',
+    label: '替换全部 1,000 行',
+    fixture: { scene: 'table', count: 1000 },
+    command: { type: 'rows', count: 1000 },
+  },
+  ...[1000, 10000].map((count) => ({
+    id: `list-update-${count}`,
+    group: '列表',
+    label: `${count} 行中每十行更新一行`,
+    fixture: { scene: 'table', count } as Fixture,
+    command: { type: 'update', step: 10 } as Command,
+  })),
+  {
+    id: 'list-select',
+    group: '列表',
+    label: '1,000 行中切换选中',
+    fixture: { scene: 'table', count: 1000 },
+    command: { type: 'select', value: 501 },
+  },
+  {
+    id: 'list-swap',
+    group: '列表',
+    label: '交换第 2 与第 999 行',
+    fixture: { scene: 'table', count: 1000 },
+    command: { type: 'swap' },
+  },
+  {
+    id: 'list-remove',
+    group: '列表',
+    label: '删除中间一行',
+    fixture: { scene: 'table', count: 1000 },
+    command: { type: 'remove', index: 500 },
+  },
+  {
+    id: 'list-append',
+    group: '列表',
+    label: '1,000 行后追加 1,000 行',
+    fixture: { scene: 'table', count: 1000 },
+    command: { type: 'append', count: 1000 },
+  },
+  ...[1000, 10000].map((count) => ({
+    id: `list-clear-${count}`,
+    group: '列表',
+    label: `清空 ${count} 行`,
+    fixture: { scene: 'table', count } as Fixture,
+    command: { type: 'clear' } as Command,
+  })),
+  ...[100, 1000, 10000].map((count) => ({
+    id: `binding-one-${count}`,
+    group: '响应式',
+    label: `${count} 个绑定中修改一个`,
+    fixture: { scene: 'bindings', count } as Fixture,
+    command: { type: 'cells', index: Math.floor(count / 2) } as Command,
+  })),
+  ...[1, 100, 1000].map((count) => ({
+    id: `batch-${count}`,
+    group: '批量通知',
+    label: `同一轮修改 ${count} / 1,000 个属性`,
+    fixture: { scene: 'bindings', count: 1000 } as Fixture,
+    command: { type: 'cells', count } as Command,
+  })),
+  ...['leaf', 'middle', 'root'].map((type) => ({
+    id: `path-${type}`,
+    group: '嵌套路径',
+    label: (
+      { leaf: '修改叶子', middle: '替换中间对象', root: '替换根下对象' } as Record<string, string>
+    )[type],
+    fixture: { scene: 'nested' } as Fixture,
+    command: { type } as Command,
+  })),
+  ...[10, 1000].map((count) => ({
+    id: `shared-${count}`,
+    group: '共享对象',
+    label: `更新 ${count} 个别名共享的数据`,
+    fixture: { scene: 'shared', count } as Fixture,
+    command: { type: 'shared' } as Command,
+  })),
+  {
+    id: 'mount-create',
+    group: '生命周期',
+    label: '挂载 500 个子组件',
+    fixture: { scene: 'mount', count: 500, visible: false },
+    command: { type: 'visible', value: true },
+  },
+  {
+    id: 'mount-destroy',
+    group: '生命周期',
+    label: '卸载 500 个子组件',
+    fixture: { scene: 'mount', count: 500, visible: true },
+    command: { type: 'visible', value: false },
+  },
+  {
+    id: 'route-param',
+    group: '路由',
+    label: '路径参数变化，复用页面',
+    fixture: { scene: 'route' },
+    command: { type: 'route', value: '/case/user/2?tab=a' },
+  },
+  {
+    id: 'route-query',
+    group: '路由',
+    label: 'query 变化，复用页面',
+    fixture: { scene: 'route' },
+    command: { type: 'route', value: '/case/user/1?tab=b' },
+  },
+  {
+    id: 'route-page',
+    group: '路由',
+    label: '切换页面，卸载并挂载',
+    fixture: { scene: 'route' },
+    command: { type: 'route', value: '/case/other' },
+  },
+  ...[1, 200].map((count) => ({
+    id: `form-input-${count}`,
+    group: '表单',
+    label: `${count} 个受控输入中输入一个字符`,
+    fixture: { scene: 'form', count } as Fixture,
+    command: { type: 'input', index: 0, value: 1 } as Command,
+  })),
+];
+export const frames = [
+  {
+    id: 'frames-one',
+    label: '10,000 个绑定中逐帧修改一个',
+    fixture: { scene: 'bindings', count: 10000 } as Fixture,
+    command: { type: 'cells', index: 5000 } as Command,
+  },
+  {
+    id: 'frames-batch',
+    label: '逐帧修改 1,000 个绑定',
+    fixture: { scene: 'bindings', count: 1000 } as Fixture,
+    command: { type: 'cells', count: 1000 } as Command,
+  },
+  {
+    id: 'frames-input',
+    label: '200 字段表单逐帧输入',
+    fixture: { scene: 'form', count: 200 } as Fixture,
+    command: { type: 'input', index: 0, value: 1 } as Command,
+  },
+];

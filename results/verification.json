@@ -1,0 +1,441 @@
+{
+  "date": "2026-11-06T08:55:28.702Z",
+  "checks": 87,
+  "results": [
+    {
+      "framework": "jinge",
+      "case": "list-create-1000",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "list-create-10000",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "list-replace-1000",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "list-update-1000",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "list-update-10000",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "list-select",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "list-swap",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "list-remove",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "list-append",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "list-clear-1000",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "list-clear-10000",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "binding-one-100",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "binding-one-1000",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "binding-one-10000",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "batch-1",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "batch-100",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "batch-1000",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "path-leaf",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "path-middle",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "path-root",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "shared-10",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "shared-1000",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "mount-create",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "mount-destroy",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "route-param",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "route-query",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "route-page",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "form-input-1",
+      "passed": true
+    },
+    {
+      "framework": "jinge",
+      "case": "form-input-200",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "list-create-1000",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "list-create-10000",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "list-replace-1000",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "list-update-1000",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "list-update-10000",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "list-select",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "list-swap",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "list-remove",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "list-append",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "list-clear-1000",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "list-clear-10000",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "binding-one-100",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "binding-one-1000",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "binding-one-10000",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "batch-1",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "batch-100",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "batch-1000",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "path-leaf",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "path-middle",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "path-root",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "shared-10",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "shared-1000",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "mount-create",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "mount-destroy",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "route-param",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "route-query",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "route-page",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "form-input-1",
+      "passed": true
+    },
+    {
+      "framework": "vue",
+      "case": "form-input-200",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "list-create-1000",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "list-create-10000",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "list-replace-1000",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "list-update-1000",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "list-update-10000",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "list-select",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "list-swap",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "list-remove",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "list-append",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "list-clear-1000",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "list-clear-10000",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "binding-one-100",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "binding-one-1000",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "binding-one-10000",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "batch-1",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "batch-100",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "batch-1000",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "path-leaf",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "path-middle",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "path-root",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "shared-10",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "shared-1000",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "mount-create",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "mount-destroy",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "route-param",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "route-query",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "route-page",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "form-input-1",
+      "passed": true
+    },
+    {
+      "framework": "react",
+      "case": "form-input-200",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "framework": "jinge",
+  "browser": "156.0.8078.80",
+  "created": "2026-11-06T08:53:52.311Z",
+  "snapshots": [
+    {
+      "label": "before",
+      "file": "results/jinge-before.heapsnapshot",
+      "sha256": "3407d504dfb813b6d6c3a8d91ec02ed0087a9802b4078a8db03516fa775405c8",
+      "bytes": 4600416,
+      "counts": {
+        "Object": {
+          "count": 414,
+          "selfBytes": 9420
+        },
+        "Array": {
+          "count": 143,
+          "selfBytes": 2288
+        },
+        "Map": {
+          "count": 71,
+          "selfBytes": 1172
+        },
+        "Set": {
+          "count": 80,
+          "selfBytes": 1316
+        }
+      }
+    },
+    {
+      "label": "after-100",
+      "file": "results/jinge-after-100.heapsnapshot",
+      "sha256": "560e155a2635a0ab0f2aa3a2a67f8e5ed16bd3044bda6239ec864623d8374dd9",
+      "bytes": 16235305,
+      "counts": {
+        "Object": {
+          "count": 20620,
+          "selfBytes": 513944
+        },
+        "Array": {
+          "count": 152,
+          "selfBytes": 2432
+        },
+        "Set": {
+          "count": 20280,
+          "selfBytes": 324516
+        },
+        "Map": {
+          "count": 71,
+          "selfBytes": 1172
+        }
+      }
+    }
+  ]
+}

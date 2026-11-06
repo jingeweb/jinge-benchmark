@@ -1,0 +1,71 @@
+{
+  "jinge": {
+    "js": 33642,
+    "gzip": 11117,
+    "css": 572,
+    "files": [
+      {
+        "file": "assets/index-BMk3tiXv.js",
+        "bytes": 33642,
+        "gzip": 11117
+      },
+      {
+        "file": "assets/index-DalCsY5M.css",
+        "bytes": 572,
+        "gzip": 353
+      },
+      {
+        "file": "index.html",
+        "bytes": 359,
+        "gzip": 256
+      }
+    ],
+    "buildMs": 106.39329200000003
+  },
+  "vue": {
+    "js": 95183,
+    "gzip": 35850,
+    "css": 572,
+    "files": [
+      {
+        "file": "assets/index-Bpa3RGvT.js",
+        "bytes": 95183,
+        "gzip": 35850
+      },
+      {
+        "file": "assets/index-DalCsY5M.css",
+        "bytes": 572,
+        "gzip": 353
+      },
+      {
+        "file": "index.html",
+        "bytes": 355,
+        "gzip": 258
+      }
+    ],
+    "buildMs": 102.898458
+  },
+  "react": {
+    "js": 267960,
+    "gzip": 84179,
+    "css": 572,
+    "files": [
+      {
+        "file": "assets/index-DalCsY5M.css",
+        "bytes": 572,
+        "gzip": 353
+      },
+      {
+        "file": "assets/index-Ix1yR97H.js",
+        "bytes": 267960,
+        "gzip": 84179
+      },
+      {
+        "file": "index.html",
+        "bytes": 359,
+        "gzip": 260
+      }
+    ],
+    "buildMs": 72.294667
+  }
+}

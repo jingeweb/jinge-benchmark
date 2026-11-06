@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "jsxImportSource": "vue",
+    "types": ["vite/client", "node", "vue/jsx"]
+  },
+  "include": ["src/vue/**/*.tsx", "src/shared/**/*.ts", "src/vue-gestures/**/*.tsx"]
+}
